@@ -6,8 +6,8 @@
                 }
 
                 #home p {
-					font-size: 160%;
-					line-height: 25px !important;
+					font-size: 100%;
+					line-height: 25px;
 				}
 
                 #home{
@@ -21,13 +21,13 @@
 					top:-10px;
 			    }
 				#website_menu li {
-					font-size:5em !important;
+					font-size:5em;
 				}
 				#nav_bar {
 					padding-right:10% !important;
 				}
 				footer .row {
-					font-size:0.8em !important;
+					font-size:0.8em;
 					
 				}
 				.row {
@@ -50,43 +50,9 @@
 
                 }
 
-            @media(max-width:1050px){
-                 
-               #home p {
-                    
-                    font-size: 60%;
-                    
-                }
-                #home{
-                    
-                    width:300px;
-                    height:200px;
-                    
-                }
-                 #cover {
-                    
-                    height:700px;
-                }
-
-        }
-
-            @media(max-width:600px){
-                
-                #home p {
-                    
-                    font-size: 30%;
-                    
-                    
-                }
-                 #home{
-                    
-                    width:100px;
-                }
-                
-
-            }
             
-       
+            
+ @media(max-width:1300px)    {  
                 body {
                     background: url(images/cover_gallery.jpg);
                     background-size: cover;
@@ -108,12 +74,12 @@
                     z-index: 0;
                     padding:0px;
                     margin-left:10%;
-                    border-radius: 50px 50px 50px 50px;
+                    border-radius: 50px 50px;
                     background: url(images/cover.jpg);
                     background-repeat: no-repeat;
-                    background-size:cover;
                     margin-top:-125px;
-
+					height:610px;
+					
                 }
 				
 				
@@ -135,15 +101,18 @@
 
                 #website_menu li {
                     display: inline;
-                    font-size:4vw;
+                    font-size:4em;
                     font-weight: bold;
                     word-spacing: -5px;
                     font-family:'Barrio', cursive;
-
+					background-color:rgba(255,255,255,0.5);
+					border-radius:10px;
+					
                 }
 				
 				#website_menu {
                     margin-bottom:-5px;
+					
                 }
 
                 header {
@@ -191,17 +160,18 @@
           
                 #home{
                     position: relative;
-                    top: 180px;
+                    top: 146px;
 					margin:auto;
                 }
                 
                 #home h1 {
-                    padding:20px;
+                    padding:2px;
                     font-family: 'Quicksand', sans-serif;
                     font-size: 4vw;
                     color: white;
                     text-shadow: 2px 2px 4px #000000;
                     padding-bottom:20px;
+					margin-right:10%;
                 }
                 #home p {
                     font-family: 'Quicksand', sans-serif;
@@ -209,6 +179,9 @@
                     line-height: 20px;
                     border-top: 1px solid black;
                     color:#602020;
+					width:400px;
+					margin-left:10%;
+					
                 }
 
                 #cover_menu {
@@ -237,6 +210,7 @@
                     font-size: 100%;
                     color:black;
                     padding-top:1%;
+					margin-right:10%;
                 }
 
                 footer{
@@ -262,6 +236,12 @@
                     color:saddlebrown;
                     text-decoration: none;
                     
+                }
+				
+				#footer_home{
+                    top:110px;
+                    padding-top:0;
+					position:relative;
                 }
 
 
@@ -376,7 +356,7 @@
 
                 .gallery_heading h1 {
                     font-family: 'Mogra', cursive;
-                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-width: 0.5px;
                     -webkit-text-stroke-color: saddlebrown;
                     font-size: 3.2vw;
                     word-spacing: 3px;
@@ -387,7 +367,7 @@
 
                 #nav_bar a{
                     color:white; 
-                    -webkit-text-stroke-width: 0.3px;
+                    -webkit-text-stroke-width: 0.2px;
                     -webkit-text-stroke-color: saddlebrown;
            
                      text-decoration: none;
@@ -396,6 +376,14 @@
                     
                 }   
                 #bar_menu a:hover{
+                    
+                    color:saddlebrown; 
+                    background-color: transparent; 
+                    text-decoration: none;
+                   
+                } 
+				
+				#website_menu a:hover{
                     
                     color:saddlebrown; 
                     background-color: transparent; 
@@ -534,5 +522,41 @@
                     height:200px;
 
                 }
+}
+				
+@media(max-width:1050px){
+                 
+               #home p {
+                    font-size: 60%;
+                    
+                }
+                #home{
+                    
+                    width:300px;
+                    height:170px;
+                    
+                }
+                 #cover {
+                    
+                    height:700px;
+                }
+
+        }
+
+            @media(max-width:600px){
+                
+                #home p {
+                    
+                    font-size: 30%;
+                    
+                    
+                }
+                 #home{
+                    
+                    width:100px;
+                }
+                
+
+            }
 
 
