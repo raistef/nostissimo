@@ -1,30 +1,40 @@
    @media(max-width:2600px){
-                     body {
-
-                        border-left:white 400px solid;
-                        border-right:white 400px solid;
-                         
-                    }
+                body {
+					border-left:white 400px solid;
+                    border-right:white 400px solid;
+					border-bottom:white 600px solid;
+                }
 
                 #home p {
-
-                        font-size: 120%;
-
-                    }
+					font-size: 160%;
+					line-height: 25px !important;
+				}
 
                 #home{
-
-                        width:500px;
-                        height:400px;
-
-                    }
+					width:550px;
+                    height:390px;
+				}
+				
                 #cover {
-                    
-                    height:1000px;
-                }
-                    
-
-            }
+					height:900px;
+					position:absolute;
+					top:-10px;
+			    }
+				#website_menu li {
+					font-size:5em !important;
+				}
+				#nav_bar {
+					padding-right:10% !important;
+				}
+				footer .row {
+					font-size:0.8em !important;
+					
+				}
+				.row {
+					margin-left:50px !important;
+				}
+				
+    }
 
             @media(max-width:2350px){
 
@@ -93,7 +103,6 @@
 
                 #cover {
                     width:80%;
-                    
                     position: relative;
                     top:0;
                     z-index: 0;
@@ -102,17 +111,21 @@
                     border-radius: 50px 50px 50px 50px;
                     background: url(images/cover.jpg);
                     background-repeat: no-repeat;
-                    background-size:100% 100%;
-                    
+                    background-size:cover;
+                    margin-top:-125px;
 
                 }
-
+				
+				#cover_box  {
+					display:block;
+					width:90%;
+					height:10%;
+				}
                 #cover_gallery {
                     width:80%;
                     height:900px;
                     background-size: cover;
                     position: relative;
-
                     padding:0px;
                     margin-left:10%;
                     border-radius: 50px 50px 50px 50px;
@@ -122,6 +135,7 @@
 
 
                 }
+				
 
                 #website_menu li {
                     display: inline;
@@ -130,6 +144,10 @@
                     word-spacing: -5px;
                     font-family:'Barrio', cursive;
 
+                }
+				
+				#website_menu {
+                    margin-bottom:-5px;
                 }
 
                 header {
@@ -147,7 +165,7 @@
                 padding-right:1%;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                padding-top: 15px;
+                padding-top: 5px;
                 text-align: right;
                 margin-left:10%;
                 width:80%;
@@ -177,9 +195,8 @@
           
                 #home{
                     position: relative;
-                    top: 200px;
-                    
-                    margin:auto;
+                    top: 180px;
+					margin:auto;
                 }
                 
                 #home h1 {
@@ -188,12 +205,11 @@
                     font-size: 4vw;
                     color: white;
                     text-shadow: 2px 2px 4px #000000;
-                    padding-bottom:40px;
+                    padding-bottom:20px;
                 }
                 #home p {
                     font-family: 'Quicksand', sans-serif;
                     padding-top: 20px;
-                    
                     line-height: 20px;
                     border-top: 1px solid black;
                     color:#602020;
@@ -214,7 +230,7 @@
                 }
 
                 footer .row {
-                    font-size: 120%;
+                    font-size: 0.9em;
                 }
                 #copyright {
                     font-size: 100%;
@@ -415,10 +431,10 @@
                 }
 
                 #google_map {
-                    width:650px;
-                    height:400px;
-                    margin: 0px;
-                    
+                    width:50vw;
+                    height:20vw;
+                    display:block;
+					margin:0 auto;					
                 }
 
                 #contact_form {
