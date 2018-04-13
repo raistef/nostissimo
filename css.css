@@ -490,7 +490,7 @@
                 }
 }
 
-@media(max-width:1300px)    {  
+@media(max-width:1300px){  
 
 							
                 #cover {
@@ -600,11 +600,10 @@
            
                             
                #nav_bar a{
-                   font-weight: bold;
-                    color:saddlebrown; 
-                    -webkit-text-stroke-width: 0.2px;
-                    -webkit-text-stroke-color: white;
-                
+                font-weight: bold;
+				color:saddlebrown; 
+                -webkit-text-stroke-width: 0.2px;
+                -webkit-text-stroke-color: white;
                 background-color: transparent; 
                 text-decoration: none;
                 }
@@ -990,9 +989,11 @@
                     height:200px;
 
                 }
-}
 				
-@media(max-width:1050px){
+	
+}
+
+@media (max-width: 1000px){
                  
                #home p {
                     font-size: 60%;
@@ -1008,8 +1009,12 @@
                     
                     height:700px;
                 }
+				#website_menu li {
+					font-size:2em;
+				}
 
-        }
+    }				
+
 
 @media(max-width:600px){
                 
