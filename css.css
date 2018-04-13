@@ -2,7 +2,7 @@
                 body {
 					border-left:white 400px solid;
                     border-right:white 400px solid;
-					border-bottom:white 600px solid;
+					
                 }
 
                 #home p {
@@ -116,11 +116,7 @@
 
                 }
 				
-				#cover_box  {
-					display:block;
-					width:90%;
-					height:10%;
-				}
+				
                 #cover_gallery {
                     width:80%;
                     height:900px;
