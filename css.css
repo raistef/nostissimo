@@ -1,5 +1,31 @@
 @media(max-width:2600px)    {  
-
+				
+			#offers_gallery {
+				width:80vw;
+				height:60vw;
+				padding:1% 5% 0 5% !important;
+			}
+			
+			#offers_gallery img {
+					float:left;
+					width:30%;
+					height:45vw;
+					margin:12px 1vw !important;
+					border-radius:5px;
+			}
+				#gallery {
+				  width:80vw;
+				  height:60vw;
+				  padding:1% 5% 0 5% !important;
+				  
+			  }
+			    #gallery img {
+					float:left;
+					width:30%;
+					height:15vw;
+					margin:12px 1vw !important;
+					border-radius:5px;
+				}
 				
 				#nav_bar {
 					padding-right:10% !important;
@@ -519,7 +545,7 @@
                 #cover {
                     width:80%;
                     position: relative;
-                    top:-60px;
+                    top:-40px;
                     z-index: 0;
                     padding:0px;
                     margin-left:10%;
@@ -527,7 +553,7 @@
                     background: url(images/cover.jpg);
                     background-repeat: no-repeat;
                     margin-top:-100px;
-					height:1300px;
+					height:1020px;
 					background-size:100% 100%;
 										
                 }
@@ -535,7 +561,7 @@
 				
                 #cover_gallery {
                     width:80%;
-                    height:900px;
+                    height:850px;
                     background-size: cover;
                     position: relative;
                     padding:0px;
@@ -562,7 +588,7 @@
 				
 				header {
                     position:relative;
-                    top:50px;
+                    top:10px;
                     left:0px;
                     right:0px;
                     z-index: 2;
@@ -623,12 +649,12 @@
                 }
                 #home p {
                     font-family: 'Quicksand', sans-serif;
-                    padding: 20px 0 0 0;
+                    padding: 10px 0 0 0;
                     line-height: 40px;
                     border-top: 1px solid black;
                     color:#602020;
 					font-size: 1.2vw;
-					margin:70px 20px 0 20px;
+					margin:30px 20px 0 20px;
 									
                 }
 
@@ -655,26 +681,12 @@
                     padding-top:1%;
                 }
                 #copyright_home {
-                    font-size: 100%;
+                    font-size: 90%;
                     color:black;
                     padding-top:1%;
 					width:50vw;
 					text-align:center;
-					margin:0 0 0 250px;
-                }
-
-                footer{
-                color:antiquewhite;
-                width:100%;
-                padding-top: 10%;
-                border-radius: 0px 0px 50px 50px;
-                position: absolute;
-                bottom:0px;
-                font-size: 1vw;
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                
-                
+					margin:0 0 0 150px;
                 }
 
                 footer a {
@@ -691,7 +703,7 @@
 				#footer_home{
                     padding-top:0;
 					position:absolute;
-					top:1160px;
+					top:890px;
 					margin-left:5%;
 					line-height:29px;
 					font-size:1.1vw;
@@ -979,6 +991,8 @@
 }
 
 @media(max-width:1300px){  
+			
+				
 			#offers_gallery {
 				width:80vw;
 				height:60vw;

@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Barrio" rel="stylesheet"> <!-- add google fonts-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Signika|Barrio" rel="stylesheet"> <!-- add google fonts-->
+
         <link rel="stylesheet" type="text/css" href="css.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- add bootstrap library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>             <!-- add jQuery library -->
@@ -10,6 +11,12 @@
         <title>
             Nostissimo
         </title>
+        
+        <script>
+            
+           
+            
+        </script>
      
     </head>
     
@@ -28,15 +35,28 @@
         </nav>
         </header>
         <div id="cover_gallery">
-			<div class="gallery2 container-fluid" id="offers_gallery">
-				<img src="images/offer1.jpg" alt="Offer 1."/>
-				<img src="images/offer2.jpg" alt="Offer 2."/>
-				<img src="images/offer3.jpg" alt="Offer 3."/>
-			</div>
-                 
-        
-        
-            <footer class="container-fluid" >
+            
+            
+
+            <form id="contact_form" action="raileanu_stefany@yahoo.com" method="post" enctype="text/plain">
+                <h2 class="text-center">Send us a message:</h2>
+                <p>Full Name:</p>
+                <input type="text" name="name" placeholder="Your full name..." required><br>
+                <p>E-mail:</p>
+                <input type="text" name="mail" placeholder="Your e-mail..." required><br>
+                <p>Your message:</p><br>
+                <textarea id="comment" type="text" name="comment" placeholder="Your comment..." size="50" required></textarea><br><br>
+                <input class="btn-primary" id="submit" type="submit" value="Send">
+                <input class="btn-primary" type="reset" value="Reset">
+            </form>
+
+            
+            
+            
+            
+            
+            
+                <footer class="container-fluid" >
                  
                  <div class="row">
                      <div class="col-lg-3 col-md-3 col-sm-3"></div>
@@ -65,7 +85,6 @@
                 <div id="copyright_home">
                      Copyright © 2015 Nostissimo EPE - All rights reserved.
                 </div>
-                
             </footer>
         </div>
         
@@ -73,5 +92,4 @@
         
     </body>
 </html>
-
 
