@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Signika|Barrio" rel="stylesheet"> <!-- add google fonts-->
 
         <link rel="stylesheet" type="text/css" href="css.css">
@@ -11,6 +11,60 @@
         <title>
             Nostissimo
         </title>
+        
+        
+        <script>
+            
+            function checkForm() { 
+                var name = document.BookingForm.name.value;
+                var email = document.BookingForm.email.value;
+                var phone_number = document.BookingForm.phone.value;
+                var people = document.BookingForm.people.value;
+                
+                if (!(name.includes(" "))) {
+                
+                    window.alert("Please enter your full name.");
+                    return false;
+                }
+    
+                if (!(email.includes("@")) || !(email.includes(".")))
+                {
+                    window.alert("Please enter a valid e-mail address.");
+                    return false;
+                }  
+                
+                
+                if (isNaN(phone_number))
+                {
+                    window.alert("Please enter a valid phone number.");
+                    return false;
+                }
+                
+                if (isNaN(people))
+                {
+                    window.alert("Please enter a valid number of people you want to book the table for.");
+                    return false;
+                }
+                
+                if (people>20)
+                {
+                    window.alert("You cannot book a table for more than 20 people :(");
+                    return false;
+                }
+                thanks();   
+                return true; 
+                
+            }
+            
+            function thanks(){
+                document.getElementById("switch").innerHTML="Thank you!";
+            }
+                
+                
+            
+        
+        </script>
+     
      
     </head>
     
@@ -32,16 +86,26 @@
             
             <div id="booking">
                 
-                <form id="contact_form" action="raileanu_stefany@yahoo.com" method="post" enctype="text/plain">
-                <h2 class="text-center">Send us a message:</h2>
-                <p>Full Name:</p>
-                <input type="text" name="name" placeholder="Your full name..." required><br>
-                <p>E-mail:</p>
-                <input type="text" name="mail" placeholder="Your e-mail..." required><br>
-                <p>Your phone number:</p><br>
-                <textarea id="number" type="text" name="Number" placeholder="Your phone number..." rows="1" columns="20" required></textarea><br><br>
-                <input class="btn-primary" id="submit" type="submit" value="Send">
-                <input class="btn-primary" type="reset" value="Reset">
+            <form id="booking_form" name="BookingForm" action="#" method="post" onSubmit="return checkForm()">
+                <h2 id="switch" class="text-center">Book a table:</h2>
+                    <p>Full Name:</p>
+                        <input type="text" name="name" placeholder="Your full name..." required><br>
+                    <p>E-mail:</p>
+                        <input type="text" name="email" placeholder="Your e-mail..." required><br>
+                    <p>Your mobile phone number:</p><br>
+                        <textarea id="phone_number" name="phone" placeholder="e.g. 69XXXXXXXX" rows="1" cols="20" required></textarea><br>
+                    <p>Where would you like to sit at our restaurant?</p><br>
+                        <div id="radio">
+                        <input  type="radio" name="location" value="i" required> Inside.
+                        <input  type="radio" name="location" value="o" required> Outside.<br>
+                        </div>
+                    <p>For how many people would you like to book the table?<br>(Please take notice that you can not book a table for more than 20 people.)</p><br>
+                        <textarea id="people_number" name="people" placeholder="Number of people..." rows="1" cols="20" required></textarea><br>
+                    <p>When would you like to book the table?</p><br>
+                        <input id="date" type="date" name="date" min="2017-06-10" max="2018-06-10" required><br>
+                   
+                    <input class="btn-primary" id="submit" type="submit" value="Send">
+                    <input class="btn-primary" type="reset" value="Reset">
             </form>
             </div>
             
